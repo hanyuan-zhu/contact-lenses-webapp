@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- tab bootstrap -->
+<!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+
+    <style type="text/css">
+      .container{
+        width: 80%;
+        border-style: dashed;
+        border-width: 2px;
+        border-radius: 2px;
+        border-color: grey;
+      }
+      .title{
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+      }
+      .iconLeft{
+        position: absolute;
+        left: 15%;
+      }
+      .iconRight{
+        position: absolute;
+        right: 15%;
+      }
+      
+      td, th {
+        border: 0px;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+    
+    <title>Our First App Test</title>
+  </head>
+
+
+
+  <body>
+    <script>
+      // tab toggle
+      $(document).ready(function(){
+        $(".nav-tabs a").click(function(){
+          $(this).tab('show');
+        });
+        
+      });
+      // toggle add
+      function myFunction() {
+        var x = document.getElementById("addcl");
+
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+
+
+    <!-- main -->
+    <div class="container">
+      <!-- first line -->
+      <h3 type="title" class = "title">
+        <span> <i class="fas fa-horse iconLeft"></i></span>
+        Zhu's App
+        <span><i class="far fa-clock iconRight"></i></span>
+    </h3>
+
+
+    
+    <!-- second line: tab -->
+      <ul class="nav nav-tabs">
+        <li class="active" style="margin-right: 40%;">
+          <a href="#pageone">My Lens</a>
+        </li>
+        <li style="text-align: center;">
+          <a href="#pagetwo">More Functions</a>
+        </li>
+      </ul>
+
+      <!-- my lens page -->
+
+
+      <!-- test -->
+
+    <!-- test end -->
+
+      <div class="tab-content">
+        <!-- home welcome line , status-->
+        <div id="pageone" class="tab-pane active">
+          <h3>Hi</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <br>
+          <!-- my lens table -->
+          <div>
+          <h4>Current lens list</h4>
+          <br>
+          <table>
+            <tr> 
+              <th>Name</th>
+              <th>Open Date</th>
+              <th>Duation</th>
+              <th>Last Used</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>aa</td>
+              <td>dddd</td>
+              <td>aa</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>aa</td>
+              <td>dddd</td>
+              <td>aa</td>
+            </tr>
+          </table>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <!-- add lens -->
+          <button onclick="myFunction()">Add lens</button>
+           <div id="addcl">
+           <form action="Desktop/app/action_page.php">
+            Name: 
+            <input type="text" value="John"><br>
+            Date: 
+            <input type="Date" value="5/26/2019"><br>
+            Duration:
+            <select name="Duration">
+              <option value="null">Please Select</option>
+              <option value="1wk">2wk</option>
+              <option value="2wk">1mo</option>
+              <option value="1mo">3mo</option>
+              <option value="3mo">6mo</option>
+              <option value="3mo">1yr</option>
+            </select><br>
+            <input type="submit" value="Submit form">
+            </form>
+          </div>
+        </div>
+
+      <!-- more functions page -->
+        <div id="pagetwo" class="tab-pane fade">
+          <h3>Menu 1</h3>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
