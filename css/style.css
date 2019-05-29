@@ -1,0 +1,27 @@
+.container {
+  width: 80%;
+  border-style: dashed;
+  border-width: 2px;
+  border-radius: 2px;
+  border-color: grey; }
+
+.title {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.iconLeft {
+  position: absolute;
+  left: 15%; }
+
+.iconRight {
+  position: absolute;
+  right: 15%; }
+
+td, th {
+  border: 0px;
+  text-align: left;
+  padding: 8px; }
+
+tr:nth-child(even) {
+  background-color: #dddddd; }
